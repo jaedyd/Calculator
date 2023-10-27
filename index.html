@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="Chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" id="display" readonly value=0>
+        <section class="calc-buttons">
+            <!-- first row of buttons -->
+            <div class="calc-button-row">
+                <button class="calc-button" onclick="clearTempInput()">
+                    C
+                </button>
+                <button class="calc-button" onclick="appendToTempSign('/')">
+                    &divide;
+                </button>
+                <button class="calc-button-double" onclick="deleteLastCharacter()">
+                    &larr;
+                </button>
+            </div>
+
+            <!-- second row of buttons -->
+            <div class="calc-button-row">
+                <button class="calc-button" onclick="appendToTempInput('7')">
+                    7
+                </button>
+                <button class="calc-button" onclick="appendToTempInput('8')">
+                    8
+                </button>
+                <button class="calc-button"  onclick="appendToTempInput('9')">
+                    9
+                </button>
+                <button class="calc-button" onclick="appendToTempSign('*')">
+                    &times;
+                </button>
+            </div>
+
+            <!-- third row of buttons -->
+            <div class="calc-button-row">
+                <button class="calc-button" onclick="appendToTempInput('4')">
+                    4
+                </button>
+                <button class="calc-button" onclick="appendToTempInput('5')">
+                    5
+                </button>
+                <button class="calc-button" onclick="appendToTempInput('6')">
+                    6
+                </button>
+                <button class="calc-button" onclick="appendToTempSign('-')">
+                    &minus;
+                </button>
+            </div>
+
+            <!-- fourth row of buttons -->
+            <div class="calc-button-row">
+                <button class="calc-button" onclick="appendToTempInput('1')">
+                    1
+                </button>
+                <button class="calc-button" onclick="appendToTempInput('2')">
+                    2
+                </button>
+                <button class="calc-button" onclick="appendToTempInput('3')">
+                    3
+                </button>
+                <button class="calc-button" onclick="appendToTempSign('+')">
+                    &plus;
+                </button>
+            </div>
+
+            <!-- fifth row of buttons -->
+            <div class="calc-button-row">
+                <button class="calc-button" onclick="toggleSign()">
+                    &plusmn;
+                </button>
+                <button class="calc-button" onclick="appendToTempInput('0')">
+                    0
+                </button>
+                <button class="calc-button" onclick="appendToTempInput('.')">
+                    .
+                </button>
+                <button class="calc-button" onclick="calculateResult()">
+                    &equals;
+                </button>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

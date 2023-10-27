@@ -1,0 +1,99 @@
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(193,172,201,1) 0%, rgba(76,114,158,1) 100%);
+    min-height: 100vh;
+    overflow: hidden;
+    color: white;
+}
+
+.container {
+    width: 400px;
+    margin: auto;
+    border: solid 15px #3A4655;
+    border-radius: 10px;
+    background-color: #3A4655;
+    padding-top: 15px;
+    box-shadow: 0 30px 60px #425062;
+}
+
+#display {
+    color: white;
+    background: #65778d;
+    width: 100%;
+    padding: 15px;
+    border: solid 1px #3A4655;
+    border-radius: 20px;
+    border-bottom: 4px;
+    margin: 0;
+    font-size: 50px;
+    text-align: end;
+    margin-bottom: 20px;
+}
+
+.calc-button-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 0;
+}
+
+.calc-button {
+    height: 20%;
+    width: 25%;
+    background: #425062;
+    color: #fff;
+    padding: 20px;
+    display: inline-block;
+    font-size: 25px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: -4px;
+    margin-bottom: -5px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 8px;
+    border: solid 2px #8a897c;
+    margin-top: 2px;
+}
+
+.calc-button-double {
+    height: 20%;
+    width: 50%;
+    background: #8d1000;
+    color: #fff;
+    padding: 20px;
+    display: inline-block;
+    font-size: 25px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: -4px;
+    margin-bottom: -5px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 8px;
+    border: solid 2px #8a897c;
+    margin-top: 2px;
+}
+
+.calc-button-double:hover {
+    background: #cbce2e;
+}
+
+.calc-button:hover {
+    background: #cbce2e;
+  }
